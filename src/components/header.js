@@ -7,14 +7,14 @@ class Header extends Component {
 
   render() {
     return (
-        <View style={styles.viewStyle}>
-          <Text style={styles.textStyle}>{this.props.headerText}</Text>
+        <View style={this.styles.viewStyle}>
+          <Text style={this.styles.textStyle}>{this.props.headerText}</Text>
         </View>
     );
   }
 }
 
-const styles = {
+Header.prototype.styles = {
   viewStyle: {
     backgroundColor: '#F8F8F8',
     justifyContent: 'center',
