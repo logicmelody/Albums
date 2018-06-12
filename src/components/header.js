@@ -1,13 +1,18 @@
 // Import libraries for making a component
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 
 // Create a component
-const Header = (props) => (
-    <View style={styles.viewStyle}>
-      <Text style={styles.textStyle}>{props.headerText}</Text>
-    </View>
-);
+class Header extends Component {
+
+  render() {
+    return (
+        <View style={styles.viewStyle}>
+          <Text style={styles.textStyle}>{this.props.headerText}</Text>
+        </View>
+    );
+  }
+}
 
 const styles = {
   viewStyle: {
