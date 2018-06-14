@@ -14,6 +14,12 @@ class Header extends Component {
   }
 }
 
+// const Header = (props) => (
+//   <View style={this.styles.viewStyle}>
+//     <Text style={this.styles.textStyle}>{props.headerText}</Text>
+//   </View>
+// );
+
 Header.prototype.styles = {
   viewStyle: {
     backgroundColor: '#F8F8F8',
